@@ -1,0 +1,107 @@
+.productDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.productDetailsImg {
+  border-radius: 2rem;
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+}
+
+.productPrices {
+  font-weight: 500;
+}
+
+.productDetailsOptions {
+  direction: rtl;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.productDetailsOptions h2 {
+  align-self: center;
+}
+
+.productDetailsDes {
+  border: 1px solid rgb(184, 183, 183);
+  direction: rtl;
+  width: 20rem;
+  font-weight: 300;
+  font-size: 0.77rem;
+  color: black;
+  font-weight: 200;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.productDetailsCapacity {
+  background-color: #ebeaea;
+  padding: 0.5rem;
+}
+
+.productDetailsCountBut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.productDetailsCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid #b9b6b6;
+  border-radius: 2rem;
+  width: 8rem;
+  height: 2rem;
+}
+
+.productDetailsCount button {
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.decreaseBut,
+.increaseBut {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.addToCartBut {
+  background-color: rgb(130, 167, 75);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  width: 11rem;
+  font-family: Vazirmatn;
+}
+
+.addToCartBut:disabled {
+  background-color: rgb(192, 191, 191);
+  cursor: not-allowed;
+}
+
+@media (max-width: 930px) {
+  .productDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productDetailsImg {
+    height: 25rem;
+  }
+}

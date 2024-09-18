@@ -1,0 +1,110 @@
+.shoppingCartTitle {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  font-size: 1.5rem;
+}
+
+.allAddedProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.addedProduct {
+  direction: rtl;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  width: 50%;
+  border-bottom: 1px solid #dddcdc;
+  padding: 1rem;
+}
+
+.addedProductImage {
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.addedProductName {
+  font-size: 1rem;
+}
+
+.addedProductDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.addedProductPrice {
+  color: gray;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: rgb(245, 92, 92);
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.deleteAddedProduct {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  opacity: 60%;
+  width: 2rem;
+  height: 1.5rem;
+  background-color: red;
+  border: none;
+  font-size: 3rem;
+  font-weight: 200;
+  color: white;
+  transition: 1s;
+}
+
+.deleteAddedProduct:hover {
+  opacity: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.swal2Confirm {
+  background-color: red !important;
+  color: white !important;
+  font-family: Vazirmatn;
+}
+
+.swal2Cancel {
+  background-color: white !important;
+  color: black !important;
+}
+
+.swal2Title {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 900px) {
+  .addedProduct {
+    display: grid;
+    column-gap: 3rem;
+  }
+
+  .totalPrice {
+    width: 15rem;
+    font-size: 1rem;
+  }
+}

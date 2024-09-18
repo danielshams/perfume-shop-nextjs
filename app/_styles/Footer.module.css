@@ -1,0 +1,52 @@
+.footerContainer {
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  margin: 0;
+  bottom: 0;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(18, 104, 253, 0.623); 
+  backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.footer {
+  direction: rtl;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  margin-bottom: 1rem;
+}
+
+.footerFirstPart {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLastPart {
+  display: flex;
+  flex-direction: column;
+}
+
+.h4 {
+  color: rgb(255, 255, 255);
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  margin: 0.5rem 0; /* مقدار margin را کاهش دهید */
+}
+
+@media (max-width: 512px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}

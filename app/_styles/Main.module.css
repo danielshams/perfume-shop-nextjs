@@ -1,0 +1,15 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.productsText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 10rem;
+  color: rgb(153, 153, 153);
+}

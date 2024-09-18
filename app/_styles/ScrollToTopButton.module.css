@@ -1,0 +1,46 @@
+@keyframes slideUpBounce {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-30px);
+  } 
+  70% {
+    transform: translateY(15px);
+  } 
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+
+.slideUpBounce {
+  animation: slideUpBounce 0.6s forwards;
+}
+
+.scrollContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 1.5rem;
+  background-color: white;
+  color: #3498db;
+  border: none;
+  width: 3rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  opacity: 0.5;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  opacity: 1;
+}

@@ -1,8 +1,15 @@
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { SessionProvider } from "next-auth/react";
+import localFont from "next/font/local";
+import "react-toastify/dist/ReactToastify.css";
+import { CartProvider } from "./_components/CartContext";
+import ProductLoader from "./_components/ProductLoader";
+import "./_styles/globals.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const vazirMatn = localFont({
+  src: "../public/fonts/webfonts/Vazirmatn-FD-Medium.woff2",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={vazirMatn.className}>
+        <SessionProvider>
+          <ProductLoader>
+            <CartProvider>{children}</CartProvider>
+          </ProductLoader>
+        </SessionProvider>
+      </body>
     </html>
   );
 }

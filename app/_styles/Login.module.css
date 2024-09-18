@@ -1,0 +1,25 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background: rgb(4, 35, 43);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  height: 20rem;
+}
+
+.h2 {
+  background: linear-gradient(to right, gold, white);
+  -webkit-background-clip: text;
+  color: transparent;
+}
