@@ -10,7 +10,7 @@ import { SearchProvider } from "./_components/SearchContext";
 
 interface HomepageProps {
   session: Session | null;
-  products: { id: number; name: string }[]; 
+  products: { id: number; name: string }[];
 }
 
 export default function Homepage({ session, products }: HomepageProps) {

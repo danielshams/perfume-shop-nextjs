@@ -10,10 +10,11 @@ import Swal from "sweetalert2";
 import styles from "../_styles/NavBar.module.css";
 import { CartContext } from "./CartContext";
 import { SearchContext } from "./SearchContext";
+import { Session } from "next-auth";
 
 interface NavBarProps {
   showSearch?: boolean;
-  session: any;
+  session: Session | null;
   hideUserIcon?: boolean;
 }
 
